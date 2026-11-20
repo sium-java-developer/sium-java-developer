@@ -20,7 +20,7 @@ Building low-latency local/distributed LLM inference pipelines, eBPF kernel tele
 
 | Domain | Technologies |
 | :--- | :--- |
-| **AI Inference & GPU Compute** | Python, PyTorch, CUDA, vLLM, llama.cpp, Ollama, GGUF/AWQ Quantization, Spring AI, LangChain4j, RAG (`pgvector`) |
+| **AI Inference & GPU Compute** | Python, PyTorch, CUDA, vLLM, llama.cpp, Ollama, GGUF/AWQ Quantization, MCP / ACP, GraphRAG, Spring AI, LangChain4j, RAG (`pgvector`) |
 | **Systems & Observability** | Linux eBPF, OpenTelemetry, Prometheus, Grafana, Hazelcast, Redis Semantic Caching |
 | **Backend & Frontend** | Java 21/25/26 (Virtual Threads, Project Panama), Spring Boot, Spring Modulith, Apache Kafka, PostgreSQL, TypeScript, React |
 | **Cloud & Orchestration** | Kubernetes, Helm (OCI), Docker, Terraform, AWS, GCP |
