@@ -9,7 +9,12 @@ Building low-latency local/distributed LLM inference pipelines, eBPF kernel tele
   - **Inference Optimization:** Achieved **3.5x faster local Qwen-2.5-3B inference** (~240ms TTFT, 38.8 tok/s) and **67.6% lower RAM footprint** using GGUF `Q4_K_M` quantization and CPU thread pinning.
   - **Cloud-Native Packaging:** Published as a multi-service OCI Helm chart (`oci://registry-1.docker.io/siumsentinelops/sentinel-ops`).
 
-- **[Sentinel Thread](https://github.com/sium-java-developer/sentinel-thread-spec)** — Event-driven autonomous observability and self-healing architecture (`Java 25/26`, `Spring Modulith`, `LangChain4j`, `PostgreSQL / pgvector`) designed for deterministic root-cause triage and automated remediation.
+
+- **[Sentinel Thread](https://github.com/sium-java-developer/sentinel-thread-spec)** — Autonomous Multi-Agent SRE Observability Platform (`Java 25/26`, `Spring Modulith`, `LangChain4j`, `MCP / ACP`, `GraphRAG`, `PostgreSQL / pgvector`, `Prometheus`).
+  - **Multi-Agent SRE Workflows:** Orchestrates autonomous diagnostic and remediation loops over live Prometheus metrics using **Model Context Protocol (MCP)** for tool/environment access and **Agent Communication Protocol (ACP)** for inter-agent coordination.
+  - **GraphRAG Incident Memory:** Cut retrieval latency by **45%** in local evaluation and eliminated context-window bloat by combining GraphRAG traversal with `pgvector` similarity search over historical incident graphs.
+  - **Production Reliability:** Backed by a live Web UI and an automated **CI/CD evaluation pipeline** to benchmark root-cause accuracy and patch safety.
+
 
 #### Technical Stack
 
